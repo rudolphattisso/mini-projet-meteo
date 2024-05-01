@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name=" description" content="Ce porjet est un exercice demander par Simplon dans le cadre de l'admission à la formation Concepteur développeur d'application">
+        <meta keyword="Météo, Simplon,">
+        <title>Mini Projet Météo</title>
+    
+        <!--lier le fichier css-->
+        <link href="style.css" rel="stylesheet">
+        <!--lier le fichier meteo.js-->
+        <script src="meteo.js"></script>
+       
+
+    </head>
+    <body>
+
+        <div>
+            <p>
+                <!--création du champ de recherche-->
+            
+                <input id="in1" placeholder="taper un nom de ville" type="search"/>
+                <!--création du button et lien avec, connection(onclick) avec l'action click dans le JS  --> 
+                <button id="bt2" onclick="getcityinfo()">Actualiser</button>
+                <button id="bt1" onclick="setInterval(getcityinfo, 3600000)">Actualiser / h</button>
+                
+
+
+            </p>
+            
+            <p>
+                <!--Affichage des informations--> 
+                <label id="name"></label>
+            </p>
+            
+            <p>
+                <label id="temperature"></label>
+            </p>
+
+            <p>
+                <label id="sky"></label>
+            </p>
+
+            <p>
+                <label id="humidity"></label>
+            </p>
+
+            <p>
+                <label id="wind"></label>
+            </p>
+
+        </div>
+    </body>
+</html>
